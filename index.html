@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    
+       <div class="head">
+           <h1>CapacityBay Survey Form</h1>
+           <p>Thank you for taking out time to help us improve the platform</p>
+       </div>
+    
+    <form action="mailto:larryjoy731@gmail.com" method="post" class="form">
+        <div class="name">
+            <label for="name">Name</label> <br>
+            <input type="text" placeholder="Enter your name" required class="width"><br> <br>
+        </div>
+
+        <div class="email">
+            <label for="Email">Email</label> <br>
+            <input type="email" placeholder="Enter your Email" required class="width"> <br> <br>
+        </div>       
+        <div class="age">
+            <label for="age">Age <small>(optional)</small></label> <br>
+            <input type="number" placeholder=" Age" class="width"> <br> <br>
+        </div>
+
+        <div class="role">
+            <label for="role">Which option best describes your current role?</label> <br>
+            <select name="role" id="dropdown" >
+                <option value="" disabled selected>Select current role</option>
+                <option value="student">Student</option>
+                <option value="ft-job">Full Time Job</option>
+                <option value="ft-learner">Full Time Learner</option>
+                <option value="prefer not to say">Prefer not to say</option>
+                <option value="others">Others</option>
+            </select> <br> <br>
+        </div>       
+        <div class="radio">
+            <label for="radio">Would you recommend CapacityBay to a friend? <small>(optional)</small></label> <br>
+            <input type="radio" name="myradio" value="definitely">Definitely <br>
+            <input type="radio" name="myradio" value="maybe">Maybe <br>
+            <input type="radio" name="myradio" value="not-sure">Not sure <br> <br>
+        </div>    
+        <div class="favourite">
+            <label for="favourite">What is your favourite feature of CapacityBay?</label> <br>
+            <select name="role" id="dropdown" >
+                <option value="" disabled selected>Select an option</option>
+                <option value="Challenges">Challenges</option>
+                <option value="Project">Project</option>
+                <option value="Community">Community</option>
+                <option value="Open Source">Open Source</option>
+            </select> <br> <br>
+        </div>
+        <div class="check-box">
+            <label for="checkbox">What would you like to see improved? (<small>Check all that apply</small>) </label> <br> 
+            <input type="checkbox" name="mycheckbox" id="" value="front-end Projects"> Front-end Projects<br>
+            <input type="checkbox" name="mycheckbox" id="" value="Back-end Projects"> Back-end Projects<br>
+            <input type="checkbox" name="mycheckbox" id="" value="Data Visualization"> Data Visualization<br>
+            <input type="checkbox" name="mycheckbox" id="" value="Challenges"> Challenges<br>
+            <input type="checkbox" name="mycheckbox" id=""value="Open Source Community"> Open Source Community<br>
+            <input type="checkbox" name="mycheckbox" id=""value="Gitter Help Rooms"> Gitter Help Rooms<br>
+            <input type="checkbox" name="mycheckbox" id=""value="Videos"> Videos<br>
+            <input type="checkbox" name="mycheckbox" id=""value="City Meetups"> City Meetups<br>
+            <input type="checkbox" name="mycheckbox" id=""value="Wiki"> Wiki<br>
+            <input type="checkbox" name="mycheckbox" id=""value="Forum"> Forum<br>
+            <input type="checkbox" name="mycheckbox" id=""value="Additional Courses"> Additional Courses<br> <br>
+        </div>
+        <div class="text-area">
+            <label for="textarea"> Any Comments or Suggestions</label> <br> 
+            <input type="text" name="textarea" id="text-area" placeholder="Enter your comment here" maxlength="100" col="30" rows="20">
+        </div>
+        <button type="submit" id="btn">
+            SUBMIT
+        </button>
+    </form>
+</div>
+</body>
+</html>
